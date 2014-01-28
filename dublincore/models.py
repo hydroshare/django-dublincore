@@ -90,6 +90,10 @@ class AbstractQualifiedDublinCoreTerm(models.Model):
     content = models.TextField()
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
+   
+    @property
+    def term_name(self):
+       return self.DCTERM_CODE_MAP[self.term]
 
     def __unicode__(self):
         return ''.join([self.get_term_display(), ':', self.qualifier, ' = ', self.content[0:50], '...' if len(self.content)>50 else '' ]) if self.qualifier else ''.join([self.get_term_display(), ' = ', self.content[0:50], '...' if len(self.content) > 50 else '' ])
