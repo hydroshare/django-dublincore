@@ -1,3 +1,0 @@
-include dublincore *.py *.json
-include README.rst
-include LICENSE
