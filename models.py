@@ -150,8 +150,8 @@ class QualifiedDublinCoreElement(AbstractQualifiedDublinCoreTerm):
         '''Make sure that the term is valid.
         If changed, create a QualifiedDublinCoreElementHistory object and save it.
         '''
-        if not self.term in self.DCELEMENT_CODE_MAP:
-            raise ValueError('Extended Dublin Core Terms such as '+self.DCTERM_CODE_MAP[self.term]+' are not allowed. Please use only Dublin Core Elements')
+        #if not self.term in self.DCELEMENT_CODE_MAP:
+        #    raise ValueError('Extended Dublin Core Terms such as '+self.DCTERM_CODE_MAP[self.term]+' are not allowed. Please use only Dublin Core Elements')
         #HOW TO TELL IF OBJECT CHANGED? RETRIEVE FROM DB and COMPARE
         changed = False
         if self.pk:# existing object
