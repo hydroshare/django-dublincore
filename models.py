@@ -141,8 +141,8 @@ class QualifiedDublinCoreElement(AbstractQualifiedDublinCoreTerm):
     DCELEMENT_LIST = [x[1].lower() for x in DCELEMENTS]
 
     def __init__(self, *args, **kwargs):
-        if len(self.DCELEMENTS) != 15:
-            raise Exception('QualifiedDublinCoreElement DCELEMENTS has'+str(len(self.DCELEMENTS))+'. It should have 15')
+        #if len(self.DCELEMENTS) != 15:
+        #    raise Exception('QualifiedDublinCoreElement DCELEMENTS has'+str(len(self.DCELEMENTS))+'. It should have 15')
         super(QualifiedDublinCoreElement, self).__init__(*args, **kwargs)
 
     #TODO: on save, save related object dc if it has function...
