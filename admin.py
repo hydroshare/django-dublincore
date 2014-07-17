@@ -2,8 +2,8 @@ from django.contrib import admin
 from dublincore.models import QualifiedDublinCoreElement, QualifiedDublinCoreElementHistory
 
 class QDCElementAdmin(admin.ModelAdmin):
-    list_display = ('id', 'term', 'qualifier', 'content_', 'content_type', 'updated_at', 'created_at', 'content_object')
-    search_fields = ('content', 'term', 'qualifier'  )
+    list_display = ('id', 'term', 'content_', 'content_type', 'updated_at', 'created_at', 'content_object')
+    search_fields = ('content', 'term'  )
     list_filter = ('content_type', 'term' )
     save_on_top = True
 
