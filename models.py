@@ -27,6 +27,7 @@ class AbstractQualifiedDublinCoreTerm(models.Model):
                 ('CVR', 'Coverage'),
                 ('CR', 'Creator'),
                 ('DT', 'Date'),
+                ('DTS', 'DateSubmitted'),
                 ('DSC', 'Description'),
                 ('FMT', 'Format'),
                 ('ID', 'Identifier'),
