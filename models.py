@@ -38,6 +38,7 @@ class AbstractQualifiedDublinCoreTerm(models.Model):
                 ('PD', 'Period'),
                 ('PT', 'Point'),
                 ('PBL', 'Publisher'),
+                ('REF', 'Reference'),
                 ('REL', 'Relation'),
                 ('RT', 'Rights'),
                 ('SRC', 'Source'),
