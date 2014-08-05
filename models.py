@@ -23,6 +23,7 @@ class AbstractQualifiedDublinCoreTerm(models.Model):
     DCTERMS = (
                 ('AB', 'Abstract'),
                 ('BX', 'Box'),
+                ('BIB', "BibliographicCitation"),
                 ('CN', 'Contributor'),
                 ('CVR', 'Coverage'),
                 ('CR', 'Creator'),
